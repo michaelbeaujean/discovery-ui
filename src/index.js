@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import Form from './js/components/Form.jsx';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import NewsletterForm from './js/components/organisms/NewsletterForm.jsx';
 
-const wrapper = document.getElementById("app");
+const wrapper = document.getElementById('app');
 
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+wrapper ? ReactDOM.render(<NewsletterForm />, wrapper) : false;
