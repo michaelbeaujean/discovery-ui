@@ -4,7 +4,7 @@ import React from 'react';
 const Input = props => {
   return (
     <div className={props.className}>
-      <label htmlFor={props.name} className="nl-form__label">
+      <label htmlFor={props.name}>
         {props.instructions}
         <input
           name={props.name}
