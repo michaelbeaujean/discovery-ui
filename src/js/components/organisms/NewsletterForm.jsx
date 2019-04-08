@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Button from './../atoms/Button.jsx';
-import Input from './../atoms/Input.jsx';
+import Button from './../atoms/Button';
+import Input from './../atoms/Input';
 
 class NewsletterForm extends Component {
   constructor() {
