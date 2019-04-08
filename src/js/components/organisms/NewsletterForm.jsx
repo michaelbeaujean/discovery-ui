@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import Button from './../atoms/Button.jsx';
 import Input from './../atoms/Input.jsx';
 
 class NewsletterForm extends Component {
@@ -9,7 +10,14 @@ class NewsletterForm extends Component {
   }
 
   handleInput() {
+    console.log('Input changed');
+  }
 
+  handleButton(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    console.log('Button clicked');
   }
 
   render() {
@@ -23,6 +31,7 @@ class NewsletterForm extends Component {
           onChange={this.handleInput}
           placeholder="Enter email address"
         />
+        <Button type="submit" text="Next" onClick={this.handleButton} />
       </div>
     );
   }
