@@ -10,7 +10,7 @@ import Input from '../../atoms/Input';
 const FormName = props => {
   return (
     <div>
-      <Headline text={props.instructions} />
+      <Headline text={props.headline} />
       <Instructions text={props.instructions} />
       <form className="nl-form__form-name">
         <fieldset>
