@@ -3,11 +3,10 @@ import React from 'react';
 
 const Input = props => {
   return (
-    <div>
+    <div className={props.className}>
       <label htmlFor={props.name} className="nl-form__label">
         {props.instructions}
         <input
-          className="nl-form__input"
           name={props.name}
           type={props.type}
           value={props.value}
