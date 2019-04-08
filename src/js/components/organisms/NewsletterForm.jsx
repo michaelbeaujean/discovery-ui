@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Button from './../atoms/Button';
-import Input from './../atoms/Input';
+import FormEmail from '../molecules/FormEmail';
+import FormName from '../molecules/FormName';
+import FormConfirmation from '../molecules/FormConfirmation';
 
 class NewsletterForm extends Component {
   constructor() {
     super();
+
+    this.handleInput = this.handleInput.bind(this);
+    this.handleButton = this.handleButton.bind(this);
+    this.handleCheckbox = this.handleCheckbox.bind(this);
   }
 
   handleInput() {
@@ -28,21 +33,20 @@ class NewsletterForm extends Component {
     return (
       <div>
         <h1>Hello World</h1>
-        <Input 
-          instructions="Sign up for the TLC Newsletter"
-          name="Email" 
-          type="email"
-          className="nl-form__input-text"
-          onChange={this.handleInput}
-          placeholder="Enter email address"
+        <FormEmail
+          headline="Join the list"
+          instructions="Sign up for the TLC Newsletter."
+          handleSubmit={(e) => this.handleButton(e)} 
         />
-        <Button type="submit" text="Next" onClick={this.handleButton} />
-        <Input
-          instructions="I agree to receive information from Discovery Communications in accordance with the following Privacy Policy"
-          name="Privacy_Policy"
-          type="checkbox"
-          className="nl-form__input-checkbox"
-          onChange={this.handleCheckbox}
+        <FormName
+          headline="Join the list"
+          instructions="Almost Done! Please Enter Your First and Last Name"
+          handleSubmit={(e) => this.handleButton(e)} 
+        />
+        <FormConfirmation
+          headline="Congratulations!"
+          instructions="Thank You For Signing Up!"
+          submessage="Look out for the latest news on your favorite shows."
         />
       </div>
     );
