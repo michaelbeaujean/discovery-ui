@@ -1,10 +1,14 @@
 // React
 import React from 'react';
 
+// Styles
+import './style.css';
+
 const Input = props => {
   return (
     <div>
       <input
+        styleName={props.error ? 'error' : null}
         name={props.name}
         type={props.type}
         value={props.value}
@@ -13,7 +17,7 @@ const Input = props => {
         required={props.required}
         minLength={props.minLength}
       />
-      {props.message !== undefined ? <span className="nl-form__message">{props.message}</span> : null}
+      {props.message !== undefined ? <span className="message">{props.message}</span> : null}
     </div>
   )
 };

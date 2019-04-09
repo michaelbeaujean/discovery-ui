@@ -14,8 +14,8 @@ const FormEmail = props => {
       <Instructions text={props.instructions} />
       <form className="nl-form__form-email">
         <fieldset>
-          <Input name="email" type="email" placeholder="Enter email address" handleChange={props.handleChange} required minLength="1"/>
-          <Input name="opt_in" type="checkbox" message="I agree to receive information from Discovery Communications in accordance with the following Privacy Policy" handleChange={props.handleChange} required />
+          <Input name="email" type="email" placeholder="Enter email address" handleChange={props.handleChange} error={props.error} required minLength="1"/>
+          <Input name="opt_in" type="checkbox" message="I agree to receive information from Discovery Communications in accordance with the following Privacy Policy" handleChange={props.handleChange} error={props.error} required />
         </fieldset>
         <Button type="submit" handleSubmit={props.handleSubmit} text="Next" />
       </form>

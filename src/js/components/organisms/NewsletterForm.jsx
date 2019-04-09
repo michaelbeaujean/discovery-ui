@@ -77,8 +77,8 @@ class NewsletterForm extends Component {
   }
 
   render() {
-    let form,
-        errorClass = this.state.showErrors ? ' nl-form--error': '';
+    let { showErrors } = this.state,
+        form;
 
     if (this.state.currentStep === 1) {
       form = <FormEmail
@@ -86,6 +86,7 @@ class NewsletterForm extends Component {
               instructions="Sign up for the TLC Newsletter."
               handleSubmit={(e) => this.handleButton(e)}
               handleChange={(e) => this.handleChange(e)}
+              error={showErrors}
             />;
     } else if (this.state.currentStep === 2) {
       form = <FormName
@@ -93,6 +94,7 @@ class NewsletterForm extends Component {
               instructions="Almost Done! Please Enter Your First and Last Name"
               handleSubmit={(e) => this.handleButton(e)}
               handleChange={(e) => this.handleChange(e)}
+              error={showErrors}
             />;
     } else {
       form = <FormConfirmation
@@ -103,7 +105,7 @@ class NewsletterForm extends Component {
     }
 
     return (
-      <div className={`nl-form${errorClass}`}>
+      <div className="nl-form">
         {form}
         <span className="nl-form__error-message">Please enter all required fields.</span>
       </div>
