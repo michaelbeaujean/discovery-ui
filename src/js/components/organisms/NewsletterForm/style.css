@@ -1,0 +1,22 @@
+.formContainer {
+  padding: 30px 20px;
+  background-color: var(--darkBlue);
+} 
+
+@media (min-width: 543px) {
+  .formContainer {
+    padding: 40px 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .formContainer {
+    padding: 40px 105px;
+  }
+}
+
+@media (min-width: 1027px) {
+  .formContainer {
+    padding: 40px 190px;
+  }
+}

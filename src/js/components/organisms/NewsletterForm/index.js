@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 // Molecule components
-import FormEmail from '../molecules/FormEmail';
-import FormName from '../molecules/FormName';
-import FormConfirmation from '../molecules/FormConfirmation';
+import FormEmail from '../../molecules/FormEmail';
+import FormName from '../../molecules/FormName';
+import FormConfirmation from '../../molecules/FormConfirmation';
+
+// Style
+import './style.css';
 
 class NewsletterForm extends Component {
   constructor() {
@@ -105,7 +108,7 @@ class NewsletterForm extends Component {
     }
 
     return (
-      <div className="nl-form">
+      <div styleName='formContainer'>
         {form}
         <span className="nl-form__error-message">Please enter all required fields.</span>
       </div>

@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
   entry: './src/index.js',
@@ -27,7 +28,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
@@ -36,7 +37,12 @@ module.exports = {
               localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
             },
           },
-          { loader: 'postcss-loader' }
+          { loader: 'postcss-loader', options: {
+            ident: 'postcss',
+            plugins: () => [
+              postcssCustomMedia(/* pluginOptions */)
+            ]
+          } }
         ],
       },
       { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file?name=[name].[ext]'}
