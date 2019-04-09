@@ -1,0 +1,6 @@
+@import '_fonts.css';
+@import '_variables.css';
+
+body {
+  font-family: var(--baseFont);
+}

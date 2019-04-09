@@ -1,6 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: './src/index.js',
+  output: {
+      path: __dirname + '/dist',
+      filename: 'main.js',
+      publicPath: '/'
+  },
   module: {
     rules: [
       {
@@ -32,7 +38,8 @@ module.exports = {
           },
           { loader: 'postcss-loader' }
         ],
-      }
+      },
+      { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file?name=[name].[ext]'}
     ]
   },
   plugins: [

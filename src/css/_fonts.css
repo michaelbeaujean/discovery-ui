@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'AzoSans';
+  src: local('Azo-Sans-Light'), url('/public/fonts/Azo-Sans-Light/Azo-Sans-Light.eot');
+  src: local('Azo-Sans-Light'), url('/public/fonts/Azo-Sans-Light/Azo-Sans-Light.eot?#iefix') format('embedded-opentype'),
+    local('Azo-Sans-Light'), url('/public/fonts/Azo-Sans-Light/Azo-Sans-Light.woff') format('woff'),
+    local('Azo-Sans-Light'), url('/public/fonts/Azo-Sans-Light/Azo-Sans-Light.ttf') format('truetype'),
+    local('Azo-Sans-Light'), url('/public/fonts/Azo-Sans-Light/Azo-Sans-Light.svg#Azo-Sans-Light') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AzoSans';
+  src: local('Azo-Sans'), url('/public/fonts/Azo-Sans/Azo-Sans.eot');
+  src: local('Azo-Sans'), url('/public/fonts/Azo-Sans/Azo-Sans.eot?#iefix') format('embedded-opentype'),
+    local('Azo-Sans'), url('/public/fonts/Azo-Sans/Azo-Sans.woff') format('woff'),
+    local('Azo-Sans'), url('/public/fonts/Azo-Sans/Azo-Sans.ttf') format('truetype'),
+    local('Azo-Sans'), url('/public/fonts/Azo-Sans/Azo-Sans.svg#Azo-Sans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AzoSans';
+  src: local('Azo-Sans-Medium'), url('/public/fonts/Azo-Sans-Medium/Azo-Sans-Medium.eot');
+  src: local('Azo-Sans-Medium'), url('/public/fonts/Azo-Sans-Medium/Azo-Sans-Medium.eot?#iefix') format('embedded-opentype'),
+    local('Azo-Sans-Medium'), url('/public/fonts/Azo-Sans-Medium/Azo-Sans-Medium.woff') format('woff'),
+    local('Azo-Sans-Medium'), url('/public/fonts/Azo-Sans-Medium/Azo-Sans-Medium.ttf') format('truetype'),
+    local('Azo-Sans-Medium'), url('/public/fonts/Azo-Sans-Medium/Azo-Sans-Medium.svg#Azo-Sans-Medium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AzoSans';
+  src: local('Azo-Sans-Bold'), url('/public/fonts/Azo-Sans-Bold/Azo-Sans-Bold.eot');
+  src: local('Azo-Sans-Bold'), url('/public/fonts/Azo-Sans-Bold/Azo-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+    local('Azo-Sans-Bold'), url('/public/fonts/Azo-Sans-Bold/Azo-Sans-Bold.woff') format('woff'),
+    local('Azo-Sans-Bold'), url('/public/fonts/Azo-Sans-Bold/Azo-Sans-Bold.ttf') format('truetype'),
+    local('Azo-Sans-Bold'), url('/public/fonts/Azo-Sans-Bold/Azo-Sans-Bold.svg#Azo-Sans-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AzoSans';
+  src: local('Azo-Sans-Black'), url('/public/fonts/Azo-Sans-Black/Azo-Sans-Black.eot');
+  src: local('Azo-Sans-Black'), url('/public/fonts/Azo-Sans-Black/Azo-Sans-Black.eot?#iefix') format('embedded-opentype'),
+    local('Azo-Sans-Black'), url('/public/fonts/Azo-Sans-Black/Azo-Sans-Black.woff') format('woff'),
+    local('Azo-Sans-Black'), url('/public/fonts/Azo-Sans-Black/Azo-Sans-Black.ttf') format('truetype'),
+    local('Azo-Sans-Black'), url('/public/fonts/Azo-Sans-Black/Azo-Sans-Black.svg#Azo-Sans-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elaine';
+  src: local('Elaine_D02'), url('/public/fonts/Elaine_D02/Elaine_D02.eot');
+  src: local('Elaine_D02'), url('/public/fonts/Elaine_D02/Elaine_D02.eot?#iefix') format('embedded-opentype'),
+    local('Elaine_D02'), url('/public/fonts/Elaine_D02/Elaine_D02.woff') format('woff'),
+    local('Elaine_D02'), url('/public/fonts/Elaine_D02/Elaine_D02.ttf') format('truetype'),
+    local('Elaine_D02'), url('/public/fonts/Elaine_D02/Elaine_D02.svg#Elaine_D02') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
