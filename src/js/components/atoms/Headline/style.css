@@ -1,0 +1,27 @@
+.headline {
+  margin: 0;
+  font-size: 36px;
+  color: var(--mint);
+  text-align: center;
+}
+
+@media (min-width: 543px) {
+  .headline {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headline {
+    float: left;
+    font-size: 60px;
+    padding-right: 75px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1027px) {
+  .headline {
+    font-size: 80px;
+  }
+}

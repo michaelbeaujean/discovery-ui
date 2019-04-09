@@ -7,8 +7,17 @@ body {
   font-family: var(--baseFont);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headerFont);
+}
+
+.clear {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }

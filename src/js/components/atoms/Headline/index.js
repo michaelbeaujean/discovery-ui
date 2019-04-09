@@ -1,8 +1,11 @@
 // React
 import React from 'react';
 
+// Style
+import './style.css';
+
 const Headline = props => {
-  return <h3 className="nl-form__headline">{props.text}</h3>
+  return <h3 styleName="headline">{props.text}</h3>
 };
 
 export default Headline;
