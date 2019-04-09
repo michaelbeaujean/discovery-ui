@@ -14,8 +14,8 @@ const FormName = props => {
       <Instructions text={props.instructions} />
       <form className="nl-form__form-name">
         <fieldset>
-          <Input name="first_name" type="text" placeholder="First Name" />
-          <Input name="last_name" type="text" placeholder="Last Name" />
+          <Input name="first_name" type="text" placeholder="First Name" handleChange={props.handleChange} minLength="1" required />
+          <Input name="last_name" type="text" placeholder="Last Name" handleChange={props.handleChange} minLength="1" required />
         </fieldset>
         <Button type="submit" handleSubmit={props.handleSubmit} text="Sign Up" />
       </form>
