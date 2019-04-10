@@ -1,0 +1,20 @@
+.button {
+  min-width: 150px;
+  height: 45px;
+  margin: 0;
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  float: right;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--red);
+  transition: all .25s ease-in-out;
+}

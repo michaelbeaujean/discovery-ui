@@ -3,6 +3,7 @@
   font-size: 36px;
   color: var(--mint);
   text-align: center;
+  align-self: center;
 }
 
 @media (min-width: 543px) {
@@ -13,7 +14,6 @@
 
 @media (min-width: 768px) {
   .headline {
-    float: left;
     font-size: 60px;
     padding-right: 75px;
     text-align: left;

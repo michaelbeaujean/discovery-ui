@@ -6,9 +6,9 @@ import './style.css';
 
 const Input = props => {
   return (
-    <div>
+    <div styleName={`input-wrapper--${props.type}`}>
       <input
-        styleName={props.error ? 'error' : null}
+        styleName={props.error ? `input--${props.type} error` : `input--${props.type}`}
         name={props.name}
         type={props.type}
         value={props.value}
@@ -17,7 +17,7 @@ const Input = props => {
         required={props.required}
         minLength={props.minLength}
       />
-      {props.message !== undefined ? <span className="message">{props.message}</span> : null}
+      {props.message !== undefined ? <span styleName="message">{props.message}</span> : null}
     </div>
   )
 };

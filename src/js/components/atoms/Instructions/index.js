@@ -1,8 +1,11 @@
 // React
 import React from 'react';
 
+// Style
+import './style.css';
+
 const Instructions = props => {
-  return <p className="nl-form__instructions">{props.text}</p>
+  return <p styleName={props.confirmation ? 'instructions-confirmation' : 'instructions'}>{props.text}</p>
 };
 
 export default Instructions;

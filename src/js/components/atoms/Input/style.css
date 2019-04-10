@@ -1,1 +1,61 @@
-.error { outline: 1px solid red; }
+.input-wrapper--email {
+
+}
+
+.input-wrapper--text {
+  width: calc(48% - 20px);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.input-wrapper--checkbox {
+  padding-top: 15px;
+}
+
+.input--text,
+.input--email {
+  padding: 9px 15px;
+  width: calc(100% - 30px);
+  color: var(--blue);
+  font-size: 14px;
+  background-color: var(--purple);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (min-width: 543px) {
+  .input--text,
+  .input--email {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input--text,
+  .input--email {
+  }
+}
+
+@media (min-width: 1027px) {
+  .input--text,
+  .input--email {
+  }
+}
+
+.input--checkbox {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.error { 
+  outline: 1px solid red; 
+}
+
+.message {
+  display: inline-block;
+  vertical-align: top;
+  width: 85%;
+  font-size: 12px;
+  padding-left: 10px;
+}

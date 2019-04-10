@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 // Molecule components
-import FormEmail from '../../molecules/FormEmail';
-import FormName from '../../molecules/FormName';
-import FormConfirmation from '../../molecules/FormConfirmation';
+import FormEmail from '../../molecules/Forms/FormEmail';
+import FormName from '../../molecules/Forms/FormName';
+import FormConfirmation from '../../molecules/Forms/FormConfirmation';
 
 // Style
 import './style.css';
@@ -71,7 +71,7 @@ class NewsletterForm extends Component {
       });
     } else {
       this.setState({ showErrors: true })
-    } 
+    }
 
     console.log("Email: " + this.state.email);
     console.log("Opt-In: " + this.state.optIn);
@@ -108,9 +108,11 @@ class NewsletterForm extends Component {
     }
 
     return (
-      <div styleName='formContainer'>
-        {form}
-        <span className="nl-form__error-message">Please enter all required fields.</span>
+      <div styleName='form-container'>
+        <div styleName="form-inner-container">
+          {form}
+          <span styleName={this.state.showErrors ? 'form-error-message show-error-message' : 'form-error-message'}>Please enter all required fields.</span>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,20 @@
+.form-wrapper {
+  display: flex;
+}
+
+.form-inner-wrapper {
+  width: 637px;
+  height: 136px;
+}
+
+.fieldset {
+  width: calc(100% - 170px);
+  padding: 0;
+  float: left;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
