@@ -8,10 +8,11 @@ This project requires [Node.js](https://nodejs.org/) to run.
 
 ### Installing
 
-Clone the git repo
+Clone the git repo and jump into the directory
 
 ```
 git clone https://github.com/michaelbeaujean/discovery-ui.git
+cd discovery-ui
 ```
 
 Install the node packages
