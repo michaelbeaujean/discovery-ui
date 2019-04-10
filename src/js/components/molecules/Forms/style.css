@@ -1,16 +1,42 @@
-.form-wrapper {
-  display: flex;
+@media (min-width: 880px) {
+  .form-wrapper {
+    display: flex;
+  }
 }
 
 .form-inner-wrapper {
-  width: 637px;
-  height: 136px;
+  width: 100%;
+}
+
+@media (min-width: 880px) {
+  .form-inner-wrapper {
+    width: 637px;
+    height: 150px;
+  } 
 }
 
 .fieldset {
-  width: calc(100% - 170px);
+  width: 100%;
   padding: 0;
-  float: left;
+}
+
+@media (min-width: 480px) {
+  .fieldset {
+    width: calc(100% - 170px);
+    float: left;
+  }
+}
+
+.form-submessage {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 880px) {
+  .form-submessage {
+    display: inline;
+    text-align: left;
+  }
 }
 
 .clear:after {

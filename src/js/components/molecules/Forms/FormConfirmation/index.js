@@ -14,7 +14,7 @@ const FormConfirmation = props => {
       <Headline text={props.headline} />
       <div styleName="form-inner-wrapper">
         <Instructions text={props.instructions} confirmation />
-        <span className="nl-form__submessage">{props.submessage}</span>
+        <span styleName="form-submessage">{props.submessage}</span>
       </div>
     </div>
   );

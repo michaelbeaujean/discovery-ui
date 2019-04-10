@@ -16,7 +16,7 @@ const FormEmail = props => {
       <Headline text={props.headline} />
       <div styleName="form-inner-wrapper">
         <Instructions text={props.instructions} />
-        <form>
+        <form styleName="clear">
           <fieldset styleName="fieldset clear">
             <Input name="email" type="email" placeholder="Enter email address" handleChange={props.handleChange} error={props.error} required minLength="1"/>
             <Input name="opt_in" type="checkbox" message="I agree to receive information from Discovery Communications in accordance with the following Privacy Policy" handleChange={props.handleChange} error={props.error} required />

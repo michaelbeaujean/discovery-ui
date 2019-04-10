@@ -4,6 +4,7 @@
   color: var(--mint);
   text-align: center;
   align-self: center;
+  white-space: nowrap;
 }
 
 @media (min-width: 543px) {
@@ -12,16 +13,17 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .headline {
+    padding-right: 30px;
     font-size: 60px;
-    padding-right: 75px;
     text-align: left;
   }
 }
 
-@media (min-width: 1027px) {
+@media (min-width: 1200px) {
   .headline {
+    padding-right: 70px;
     font-size: 80px;
   }
 }

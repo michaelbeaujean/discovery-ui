@@ -5,19 +5,19 @@
 
 @media (min-width: 543px) {
   .form-container {
-    padding: 40px 80px;
+    /* padding: 40px 80px; */
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .form-container {
-    padding: 40px 105px;
+    /* padding: 40px 105px; */
   }
 }
 
 @media (min-width: 1027px) {
   .form-container {
-    padding: 40px 190px;
+    /* padding: 40px 190px; */
   }
 }
 
@@ -32,26 +32,42 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .form-inner-container {
-    
+    max-width: 778px;
   }
 }
 
-@media (min-width: 1027px) {
+@media (min-width: 1200px) {
   .form-inner-container {
     max-width: 1060px;
   }
 }
 
 .form-error-message {
-  position: absolute;
-  right: 70px;
-  bottom: 0;
   display: none;
   color: var(--red);
   font-size: 12px;
+  text-align: center;
+  padding-top: 20px;
 }
+
+@media (min-width: 880px) {
+  .form-error-message {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-error-message {
+    right: 70px;
+  }
+}
+
 
 .show-error-message {
   display: block;

@@ -16,7 +16,7 @@ const FormName = props => {
       <Headline text={props.headline} />
       <div styleName="form-inner-wrapper">
         <Instructions text={props.instructions} />
-        <form>
+        <form styleName="clear">
           <fieldset styleName="fieldset clear">
             <Input name="first_name" type="text" placeholder="First Name" handleChange={props.handleChange} minLength="1" required />
             <Input name="last_name" type="text" placeholder="Last Name" handleChange={props.handleChange} minLength="1" required />

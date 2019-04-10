@@ -3,13 +3,36 @@
   color: var(--blue);
   font-size: 16px;
   font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .instructions {
+    font-size: 18px;
+  }
 }
 
 .instructions {
   text-transform: uppercase; 
 }
 
+@media (min-width: 880px) {
+  .instructions,
+  .instructions-confirmation {
+    text-align: left;
+  }
+}
+
 .instructions-confirmation {
-  font-size: 32px;
-  margin: 30px 0 10px;
+  width: 75%;
+  margin: 20px auto;
+  font-size: 24px;
+}
+
+@media (min-width: 880px) {
+  .instructions-confirmation {
+    width: 100%;
+    margin: 30px 0 10px;
+    font-size: 32px;
+  }
 }
