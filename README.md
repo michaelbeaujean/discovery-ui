@@ -1,6 +1,6 @@
-# Discovery UI Assignment
+# Discovery UI Component
 
-Discovery's UI team coding assignment to build out a responsive newsletter sign up component.
+Re-creating Discovery's responsive newsletter sign up component.
 
 ## Getting Started
 
